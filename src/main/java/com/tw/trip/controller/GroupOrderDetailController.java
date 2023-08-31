@@ -2,9 +2,9 @@ package com.tw.trip.controller;
 
 import com.google.gson.Gson;
 import com.tw.member.model.Member;
-import com.tw.trip.pojo.TourGroup;
-import com.tw.trip.pojo.TourGroupDetail;
-import com.tw.trip.pojo.TripOrder;
+import com.tw.itinerary.model.TourGroup;
+import com.tw.itinerary.model.TourGroupDetail;
+import com.tw.itinerary.model.TripOrder;
 import com.tw.trip.service.GroupOrderDetailService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.json.JSONException;

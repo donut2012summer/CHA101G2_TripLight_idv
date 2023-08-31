@@ -1,6 +1,6 @@
 package com.tw.trip.dao;
 
-import com.tw.trip.pojo.TripOrder;
+import com.tw.itinerary.model.TripOrder;
 
 import java.util.List;
 

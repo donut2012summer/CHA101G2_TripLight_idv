@@ -689,12 +689,14 @@
       $(document).on('click', '[id^="ticketType"]', function () {
         doSearch(0);
       });
+
       // 全選按鈕的事件
       $(document).on('click', '#allTicketZone', function () {
         const checked = $(this).prop('checked');
         $('[id^="ticketZone"]').prop('checked', checked);
         doSearch(0);
       });
+
       // 縣市按鈕的事件
       $(document).on('click', '[id^="ticketZone"]', function () {
         const allChecked = ($('[id^="ticketZone"]:checked').length == taiwanCities.length);
@@ -874,6 +876,7 @@
           </div>
         `);
         $('#searchPagination ul').html('');
+
         return;
       }
 

@@ -1,4 +1,4 @@
-package com.tw.trip.pojo;
+package com.tw.itinerary.model;
 
 import static com.tw.trip.controller.TripImageController.IMG_URL;
 
@@ -7,21 +7,14 @@ import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Transient;
-import lombok.Getter;
-import lombok.Setter;
+import com.tw.ticket.model.TicketType;
+import jakarta.persistence.*;
+import lombok.*;
 
-@Getter
-@Setter
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Trip implements Serializable {
 
 	public static final long serialVersionUID = 3L;
@@ -30,9 +23,11 @@ public class Trip implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int tripId;
 
-	private int vendorId;
+	@OneToOne
+	@JoinColumn(name = "tripTypeId")
+	private TripType tripType;
 
-	private int tripTypeId;
+	private int vendorId;
 
 	private String tripName;
 
@@ -78,7 +73,7 @@ public class Trip implements Serializable {
 	private Integer tourGroupId;
 
 	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
-	@JoinColumn(name = "tripId")    // 這是啥? name不對也能接收喔? 好神奇
+	@JoinColumn(name = "tripId")
 	private List<TripComment> tripComments = new ArrayList<>();
 
 	// cascade表示存檔時 也一起寫入AiLocations
@@ -86,31 +81,6 @@ public class Trip implements Serializable {
 	@JoinColumn(name = "tripId")
 	private List<TripImage> tripImage = new ArrayList<>();
 
-	// ----------------------------
-	// 獲得指定索引的圖片路徑
-	public String getImgUrlEx(final int index) {
-		if (index < 0 || index >= tripImage.size()) {
-			return IMG_URL + 0;
-		}
-		return IMG_URL + tripImage.get(index).getId();   // 獲得第一個圖片的id
-	}
-
-	// 獲得指定索引的圖片路徑的陣列
-	public ArrayList<String> getImgUrlExs() {
-		final ArrayList<String> result = new ArrayList<>();
-		if (tripImage.isEmpty()) {
-			result.add(IMG_URL + 0);
-			return result;
-		}
-		tripImage.forEach(img -> {
-			result.add(IMG_URL + img.getId());
-		});
-		return result;
-	}
-
-	public Trip() {
-
-	}
 
 	public Trip(final Integer tripId, final String tripName, final Integer tripDay, final String city, final String tripContent, final byte[] image) {
 
@@ -135,7 +105,7 @@ public class Trip implements Serializable {
 	}
 
 	public Trip(final String tripName, final Integer tripDay, final String city, final String tripContent, final String tripDescription,
-			final String tripNote) {
+				final String tripNote) {
 		this.tripName = tripName;
 		this.tripDay = tripDay;
 		this.city = city;
@@ -145,7 +115,7 @@ public class Trip implements Serializable {
 	}
 
 	public Trip(final Integer tripId, final String tripName, final String tripContent, final Integer tripOrderId, final Integer id,
-			final Integer tourGroupId, final Integer tripDay) {
+				final Integer tourGroupId, final Integer tripDay) {
 
 		this.tripId = tripId;
 		this.tripName = tripName;

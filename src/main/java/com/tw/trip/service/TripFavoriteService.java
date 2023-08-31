@@ -10,12 +10,12 @@ import com.tw.member.model.Member;
 import com.tw.member.model.dao.MemberRepository;
 import com.tw.trip.controller.TripFavoriteController.DetailDto;
 import com.tw.trip.controller.TripFavoriteController.FavoriteReqDto;
-import com.tw.trip.pojo.Trip;
+import com.tw.itinerary.model.Trip;
 import com.tw.trip.pojo.TripFavorite;
 import com.tw.trip.pojo.TripFavorite.PrimaryKey2;
 import com.tw.trip.repository.TripFavoriteRepository;
-import com.tw.trip.repository.TripImageRepository;
-import com.tw.trip.repository.TripRepository;
+import com.tw.itinerary.model.repository.TripImageRepository;
+import com.tw.itinerary.model.repository.TripRepository;
 
 @Service
 public class TripFavoriteService {

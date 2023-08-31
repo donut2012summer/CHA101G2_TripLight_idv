@@ -1,6 +1,6 @@
 package com.tw.trip.dao;
 
-import com.tw.trip.pojo.Trip;
+import com.tw.itinerary.model.Trip;
 import java.util.List;
 
 public interface TripDao {

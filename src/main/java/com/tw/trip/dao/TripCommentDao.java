@@ -1,6 +1,6 @@
 package com.tw.trip.dao;
 
-import com.tw.trip.pojo.TripComment;
+import com.tw.itinerary.model.TripComment;
 
 import java.util.List;
 

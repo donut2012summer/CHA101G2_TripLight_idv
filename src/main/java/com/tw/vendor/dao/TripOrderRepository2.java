@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.tw.trip.pojo.TripOrder;
+import com.tw.itinerary.model.TripOrder;
 
 @Repository
 public interface TripOrderRepository2 extends JpaRepository<TripOrder, Integer> {

@@ -16,7 +16,7 @@ import com.tw.member.model.Member;
 import com.tw.member.model.dao.MemberRepository;
 import com.tw.ticket.Config;
 import com.tw.ticket.thirdparty.mail.MailService;
-import com.tw.trip.pojo.TripOrder;
+import com.tw.itinerary.model.TripOrder;
 import com.tw.vendor.dao.TourGroupDetailRepository2;
 import com.tw.vendor.dao.TourGroupRepository2;
 import com.tw.vendor.dao.TripOrderRepository2;

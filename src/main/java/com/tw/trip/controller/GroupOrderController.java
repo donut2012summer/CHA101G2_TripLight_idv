@@ -2,7 +2,7 @@ package com.tw.trip.controller;
 
 import com.google.gson.Gson;
 import com.tw.member.model.Member;
-import com.tw.trip.pojo.Trip;
+import com.tw.itinerary.model.Trip;
 import com.tw.trip.service.GroupOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

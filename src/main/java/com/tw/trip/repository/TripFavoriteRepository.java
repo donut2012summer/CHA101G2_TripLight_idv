@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.tw.trip.pojo.Trip;
+import com.tw.itinerary.model.Trip;
 import com.tw.trip.pojo.TripFavorite;
 import com.tw.trip.pojo.TripFavorite.PrimaryKey2;
 

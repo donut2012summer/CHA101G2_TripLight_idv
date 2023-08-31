@@ -2,7 +2,7 @@ package com.tw.vendor.dto;
 
 import java.sql.Date;
 
-import com.tw.trip.pojo.TourGroup;
+import com.tw.itinerary.model.TourGroup;
 
 import lombok.Data;
 

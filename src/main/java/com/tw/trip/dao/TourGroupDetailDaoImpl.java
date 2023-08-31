@@ -1,7 +1,7 @@
 package com.tw.trip.dao;
 
 
-import com.tw.trip.pojo.TourGroupDetail;
+import com.tw.itinerary.model.TourGroupDetail;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
 import org.hibernate.Session;

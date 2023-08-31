@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TripLight | Trip</title>
 
-    <!-- lib. -->
+    <!-- --------------------------------------------- View Lib  --------------------------------------------- -->
 
     <!-- boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,44 +18,42 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="css/itinerary.css">
-
     <!-- soft table -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
 
     <!-- jay's -->
     <!-- css files -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
     <!-- bootstrap css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+
     <!-- custom css -->
     <link href="css/fontawesome-all.css" rel="stylesheet" />
-    <!-- fontawesome css -->
-    <!-- //css files -->
 
     <!-- google fonts -->
-    <!-- 載入字體 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
-    <!-- //google fonts -->
 
-    <!-- 載入icon -->
+    <!-- icons -->
     <link rel="shortcut icon" href="./images/icon.png" />
     <link rel="bookmark" href="./images/icon.png" />
 
     <!-- yen -->
     <link href="css/login.css" rel="stylesheet" />
 
+    <!-- end of head -->
 </head>
 
 <body>
 
-    <!-- ====================================== 上層  ====================================== -->
-    <!-- header -->
+    <!-- --------------------------------------------- 上層  --------------------------------------------- -->
+    <!-- ----- header ----- -->
     <header>
         <div class="container" style="padding-right: 0px">
-            <!-- nav -->
+
+            <!-- ----- nav ----- -->
             <nav class="py-md-4 py-3">
                 <div id="logo">
                     <h1 class="mt-md-0 mt-2">
@@ -78,7 +76,7 @@
                     </li>
                 </ul>
             </nav>
-            <!-- //nav -->
+            <!-- ----- //nav ----- -->
 
             <div class="member">
                 <ul class="member_list">
@@ -109,10 +107,9 @@
             </div>
         </div>
     </header>
-    <!-- //header -->
-    <!-- 登入 -->
+
+    <!-- ----- login ----- -->
     <div id="login-container">
-        <!---container--->
 
         <div class="main-box login">
             <h3>登入</h3>
@@ -171,15 +168,12 @@
         </span>
     </div>
 
-    <!-- 登入  -->
-
-    <!-- banner -->
+    <!-- ----- banner ----- -->
     <section class="banner_inner" id="home">
         <div class="banner_inner_overlay"></div>
     </section>
-    <!-- //banner -->
-    <!-- Navbar -->
-    <!-- Navbar -->
+
+    <!-- ----- Navbar ----- -->
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <form class="d-flex input-group w-auto">
@@ -191,54 +185,23 @@
             </form>
         </div>
     </nav>
-    <!-- Navbar -->
 
-    <!-- ====================================== //上層  ====================================== -->
-
-    <!-- ====================================== 內容區  ====================================== -->
+    <!-- --------------------------------------------- Content  --------------------------------------------- -->
 
     <div class="container-fluid mt-5">
         <div class="row justify-content-center">
 
-            <!-- ====================== 左側搜尋欄 ============================== -->
+            <!-- ----- Left Search Bar ----- -->
             <div class="col-2 mx-3">
 
-                <!-- 篩選目的地 -->
+                <!-- ----- Zone 1 ----- -->
                 <div class="mb-4 mt-4 shadow-lg p-3 mb-5 bg-body rounded">
-
-
                     <div class="item_topic" id="sortContainer">
                         <p>排序</p>
                     </div>
                     <hr>
 
-                    <!--                    <div class="item_search">-->
-                    <!--                        <div class="input-group rounded">-->
-                    <!--                            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"-->
-                    <!--                                aria-describedby="search-addon" />-->
-                    <!--                            <span class="input-group-text border-0" id="search-addon">-->
-                    <!--                                <i class="fas fa-search"></i>-->
-                    <!--                            </span>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-
-                    <!--                    <div class="item_city mt-3" name="sort" value="byDegree">-->
-                    <!--                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"-->
-                    <!--                            class="bi bi-fire" viewBox="0 0 16 16">-->
-                    <!--                            <path-->
-                    <!--                                d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z" />-->
-                    <!--                        </svg>-->
-                    <!--                        <span id="salesAmount">熱門程度</span>-->
-                    <!--                    </div>-->
-                    <!--                    <div class="item_city mt-3" name="sort" value="bySuggested">-->
-                    <!--                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"-->
-                    <!--                            class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">-->
-                    <!--                            <path-->
-                    <!--                                d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z" />-->
-                    <!--                        </svg>-->
-                    <!--                        <label for="">TripLight 推薦 </label>-->
-                    <!--                    </div>-->
-
+                    <!-- Price  -->
                     <div class="item_city mt-3" name="sort" value="byPriceLowToHigh">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-currency-dollar" viewBox="0 0 16 16">
@@ -250,11 +213,10 @@
 
                 </div>
 
-
-
-                <!-- ============================= left Zone Row 2  ============================= -->
+                <!-- ----- Zone 2 ----- -->
                 <div class="accordion">
-                    <!-- ========================= search by City ============================== -->
+
+                    <!-- Search by City-->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -263,16 +225,17 @@
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
-                            <!-- 區塊1的選項 -->
+                            <!-- Options of Zone 1 -->
                             <div class="accordion-body p-1 px-5">
 
-                                <!--======================= 北北基宜 =======================-->
+                                <!-- 北北基 -->
                                 <p>
                                     <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#zoneA"
                                         aria-expanded="false" aria-controls="collapseExample">
                                         北北基
                                     </button>
                                 </p>
+
                                 <div class="collapse" id="zoneA">
                                     <div class="card card-body">
                                         <div class="form-check d-flex gap-3">
@@ -292,8 +255,7 @@
                                     </div>
                                 </div>
 
-                                <!--======================= //北北基宜 =======================-->
-                                <!--======================= 桃竹苗 =======================-->
+                                <!-- 桃竹苗 -->
                                 <p>
                                     <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#zoneB"
                                         aria-expanded="false" aria-controls="collapseExample">
@@ -325,9 +287,7 @@
                                     </div>
                                 </div>
 
-                                <!--======================= //桃竹苗 =======================-->
-
-                                <!--======================= 中彰投 =======================-->
+                                <!-- 中彰投 -->
                                 <p>
                                     <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#zoneC"
                                         aria-expanded="false" aria-controls="collapseExample">
@@ -355,9 +315,8 @@
                                     </div>
                                 </div>
 
-                                <!--======================= //中彰投 =======================-->
 
-                                <!--======================= 雲嘉南 =======================-->
+                                <!-- 雲嘉南 -->
                                 <p>
                                     <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#zoneD"
                                         aria-expanded="false" aria-controls="collapseExample">
@@ -390,9 +349,7 @@
                                     </div>
                                 </div>
 
-                                <!--======================= //雲嘉南 =======================-->
-
-                                <!--======================= 高屏 =======================-->
+                                <!-- 高屏 -->
                                 <p>
                                     <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#zoneE"
                                         aria-expanded="false" aria-controls="collapseExample">
@@ -415,9 +372,7 @@
                                     </div>
                                 </div>
 
-                                <!--======================= //高屏 =======================-->
-
-                                <!--======================= 宜花東 =======================-->
+                                <!-- 宜花東 -->
                                 <p>
                                     <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#zoneF"
                                         aria-expanded="false" aria-controls="collapseExample">
@@ -445,9 +400,7 @@
                                     </div>
                                 </div>
 
-                                <!--======================= //宜花東 =======================-->
-
-                                <!--======================= 澎金馬 =======================-->
+                                <!-- 澎金馬 -->
                                 <p>
                                     <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#zoneG"
                                         aria-expanded="false" aria-controls="collapseExample">
@@ -475,15 +428,15 @@
                                     </div>
                                 </div>
 
-                                <!--======================= //澎金馬 =======================-->
-
 
                             </div>
                         </div>
                     </div>
 
 
-                    <!-- 區塊2 -->
+                    <!-- ----- Zone 3 ----- -->
+
+                    <!-- Search by trip type -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -491,7 +444,8 @@
                                 行程時間
                             </button>
                         </h2>
-                        <!-- 區塊2的選項 -->
+
+                        <!-- Options -->
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
                             <div class="accordion-body p-1 px-5">
 
@@ -509,20 +463,19 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
 
-
             </div>
 
-            <!-- ====================== // 左側搜尋欄 ============================== -->
-
-            <!-- ====================== 右側搜尋欄 ============================== -->
+            <!-- ----- Right Result List ----- -->
             <div class="col-7" id="productItems">
-                <!--動態生成-->
+                <!-- Dynamic -->
             </div>
-            <!-- ====== 分頁區 ====== -->
+
+            <!-- ----- Pagination ----- -->
             <div class="d-flex justify-content-center align-items-center my-3">
                 <ul class="pagination">
                     <li class="page-item">
@@ -545,11 +498,8 @@
 
     </div>
     </div>
-    <!-- ====================== //右側商品欄位 ============================== -->
 
-    <!-- ====================================== 內容區  ====================================== -->
-    <!-- ====================================== 下層  ====================================== -->
-
+    <!-- --------------------------------------------- Bottom --------------------------------------------- -->
     <!--footer -->
     <footer>
         <section class="footer footer_w3layouts_section_1its py-5">
@@ -634,13 +584,11 @@
             </div>
         </section>
     </footer>
-    <!-- //footer -->
 
     <!-- copyright -->
     <div class="copyright py-3 text-center">
         <p>COPYRIGHT © 2023 TripLight All rights reserved.</p>
     </div>
-    <!-- //copyright -->
 
     <!-- move top -->
     <div class="move-top text-right">
@@ -648,12 +596,9 @@
             <span class="fa fa-angle-up mb-3" aria-hidden="true"></span>
         </a>
     </div>
-    <!-- move top -->
 
-    <!-- ====================================== /下層  ====================================== -->
-
-    <!-- ========== lib  ========== -->
-
+    <!-- end UI -->
+    <!-- --------------------------------------------- Script Libs ----------------------------------------- -->
 
     <!-- jquery -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -673,146 +618,105 @@
     <!--soft table-->
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
 
-
     <!-- login顯示 -->
     <script src="js/Login.js"></script>
-    <!-- login顯示 -->
 
-    <!-- ====================================== Java Script  ====================================== -->
-
+    <!-- --------------------------------------------- Script ----------------------------------------- -->
     <script>
         $(document).ready(function () {
 
-            // ===== 網址列取得 分頁index ======
+            // -------------------------------------- Methods Definitions --------------------------------------
+
+            // Index : get page index fromURL ( for pagination
             function getIndex() {
-                const queryString = window.location.search; // 返回 "?name=John&age=25"
+                // get a query String
+                const queryString = window.location.search;
+
+                // get URL parameters as an object
                 const urlParams = new URLSearchParams(queryString);
+
+                // if there is value of the 'index'
+                // get value of the key 'index' from the urlParams obj
                 if (urlParams.get('index') != null) {
-                    return urlParams.get('index'); // 返回 "25"
+                    return urlParams.get('index');
                 }
             }
-            let index = getIndex();
 
+            // Default : default Trips when first load the page
+            function defaultSearch() {
 
-            defaultSearch(index);
-            // ====== 搜尋功能 ======
-            function searchByCities() {
-                // 物件存放當下被點擊的搜尋條件
-                let currentChecked = {
+                // request Data from server
+                $.getJSON(`/tripSearch/default`, function (response) {
+
+                    // render search of the response
+                    render_search(response);
+                });
+            }
+
+            // Search : by keyword, tripDayType and cities
+            function doSearch(){
+
+                // request data for search in json
+                const post = {
+                    keyword: $('#tripSearch').val(),
+                    tripDayTypes: [],
                     cities: [],
                 };
 
-                // 當下被點擊的 cities 存入陣列
-                $('[id^="tripZone"]:checked').each((i, v) => {
-                    currentChecked.cities.push(v.value);
-                });
-
-                // 發送請求
-                $.post("/tripSearch/getTripsByCities", JSON.stringify(currentChecked), function (response) {
-
-                    let index2 = getIndex();
-                    if (response.length === 0) {
-                        $('#productItems').empty();
-                        let noResult = `<h3> 嗚嗚，無符合的行程 </h3>`;
-                        $('#productItems').append(noResult);
-
-                        setTimeout(function () {
-                            $('#productItems').empty();
-                            let noResult = `<h3> 看看其他方案吧~ </h3>`;
-                            $('#productItems').append(noResult);
-                            defaultSearch(index2);
-
-                        }, 3000);
-
-                    } else {
-                        render_search(response);
-                    }
-
-                    // 渲染頁面
-                }, 'json');
-
-            }
-
-            function searchByTypes() {
-                // 物件存放當下被點擊的搜尋條件
-                let currentChecked = {
-                    tripDayTypes: [],
-                };
-
-                // 當下被點擊的 tripType 存入陣列
+                // Event checked : push checked item in the tripDayTypes
                 $('[id^="tripDayTypes"]:checked').each((i, v) => {
-                    currentChecked.tripDayTypes.push(v.value);
+                    post.tripDayTypes.push(v.value);
                 });
 
-                // 發送請求
-                $.post("/tripSearch/getTripsByTypes", JSON.stringify(currentChecked), function (response) {
-                    if (response.length === 0) {
-                        let index2 = getIndex();
-                        $('#productItems').empty();
-                        let noResult = `<h3> 嗚嗚，無符合的行程 </h3>`;
-                        $('#productItems').append(noResult);
+                // Event checked : push checked item in the cities
+                $('[id^="tripZone"]:checked').each((i, v) => {
+                    post.cities.push(v.value);
+                });
 
-                        setTimeout(function (index) {
+                // Request : retrieve data from DB and render
+                $.ajax({
+                    type: "POST",
+                    url: "/tripSearch/search",
+                    contentType: "application/json",
+                    data: JSON.stringify(post),
+                    success: function(response) {
+
+                        // if there is no result of the search
+                        if (response.length === 0) {
                             $('#productItems').empty();
-                            let noResult = `<h3> 看看其他方案吧~ </h3>`;
+                            let noResult = `<h3> 嗚嗚，無符合的行程 </h3>`;
                             $('#productItems').append(noResult);
-                            defaultSearch(index2);
 
-                        }, 3000);
+                            setTimeout(function () {
+                                $('#productItems').empty();
+                                let noResult = `<h3> 看看其他方案吧~ </h3>`;
+                                $('#productItems').append(noResult);
+                                defaultSearch();
 
-                    } else {
-                        render_search(response);
+                            }, 3000);
+
+                        } else {
+                            // if got result of the search
+                            render_search(response);
+                        }
+                    },
+                    error: function(error) {
+                        console.log(error);
                     }
+                });
 
-                    // 渲染頁面
-                }, 'json');
 
             }
 
-            function searchByKeyword() {
-                // 物件存放當下被點擊的搜尋條件
-                let currentChecked = {
-                    keyword: $('#tripSearch').attr('value'),
-                };
-
-
-                // 發送請求
-                $.post("/tripSearch/getTripsByKeyword", JSON.stringify(currentChecked), function (response) {
-                    if (response.length === 0) {
-                        let index2 = getIndex();
-                        $('#productItems').empty();
-                        let noResult = `<h3> 嗚嗚，無符合的行程 </h3>`;
-                        $('#productItems').append(noResult);
-
-                        setTimeout(function () {
-                            $('#productItems').empty();
-                            let noResult = `<h3> 看看其他方案吧~ </h3>`;
-                            $('#productItems').append(noResult);
-                            defaultSearch(index2);
-
-                        }, 3000);
-
-                    } else {
-                        render_search(response);
-                    }
-
-                    // 渲染頁面
-                }, 'json');
-
-            }
-
-            function searchByPrice() {
-                let index2 = getIndex();
-                $.getJSON(`/tripSearch/getTripListOrderByPrice?index=${index2}`, function (response) {
-
+            // Search : Trips order by price
+            function searchOrderByPrice() {
+                $.getJSON(`/tripSearch/orderByPrice`, function (response) {
                     render_search(response);
-
-                    // 渲染頁面
                 }, 'json');
 
             }
 
-
+            // Render : render in page
             function render_search(response) {
                 let parentEl = $('#productItems');
                 parentEl.empty();
@@ -851,86 +755,46 @@
                 })
             }
 
-            // 綁定三個選擇事件
-            // 1. 城市按鈕
+
+            // -------------------------------------- Actions --------------------------------------
+
+            // Trips when first loaded the page
+            defaultSearch();
+
+            // -------------------------------------- Event Listener  --------------------------------------
+            // Event click : '城市按鈕'
             $(document).on('click', '[id^="tripZone"]', function () {
-                searchByCities();
+                doSearch();
             });
-            // 2. 類型按鈕
+
+            // Event click : '類型按鈕'
             $(document).on('click', '[id^="tripDayTypes"]', function () {
-                searchByTypes()
+                doSearch();
             });
-            // 3. 關鍵字搜尋
+
+            // Event change : '關鍵字'
             $('#tripSearch').on('change', function () {
-                searchByKeyword();
-
+                doSearch();
             });
 
+            // Event keydown: '關鍵字'
             $('#tripSearch').keydown(function (event) {
                 if (event.keyCode === 13) {
                     event.preventDefault(); // 阻止默認行為
-                    // 在這裡執行你的其他代碼
-                    searchByKeyword();
+                    doSearch();
                 }
             });
 
 
-            // 4. 價格: 低至高
+            // Event click : '價格低至高'
             $('#orderByPrice').on('click', function (index) {
-                searchByPrice();
+                searchOrderByPrice();
             })
 
-
-            // ====== // 搜尋功能 待完成 ======
-
-            // ====== 網頁預設搜尋預設畫面 (全部) ======
-            function defaultSearch() {
-                $.getJSON(`/tripSearch/getTripList?index=${index}`, function (response) {
-
-                    let parentEl = $('#productItems');
-
-                    for (let i = 0; i < response.length; i++) {
-                        let imageUrl = response[i].imageUrl;
-
-                        let newChildEl = `
-                 <div class="card mb-3 my-nav-link" href="#">
-                    <div class="row g-0 h-100">
-                        <div class="col-md-4 h-100">
-                            <img src="${imageUrl}" class="img-fluid rounded-start"
-                                alt="productItemsPic">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">${response[i].tripName}</h5>
-                                <p class="card-text">${response[i].tripContent}</p>
-                                <i class="fa-sharp fa-solid fa-location-dot" style="color: #46dadd;"></i>
-                                <span id="city">${response[i].tripDay}日旅程</span>
-                                <br>
-                                <button
-                                type="button" class="btn btn-light changePage" data-mdb-ripple-color="dark" tripId="${response[i].tripId}">查看詳情</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                `;
-                        parentEl.append(newChildEl);
-                    }
-
-                    $('#productItems').on('click', '.changePage', function (event) {
-                        let tripId = $(this).attr('tripId');
-                        window.location.href = `/front-end/itinerary_page.html?tripId=${tripId}`;
-                    })
-
-
-                });
-            }
-
-            // ====== //網頁預設搜尋畫面 (全部) ======
-
+            // ------ end script ------
         });
 
     </script>
-    <!-- ====================================== //Java Script  ====================================== -->
 
 </body>
 

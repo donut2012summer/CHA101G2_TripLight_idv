@@ -1,19 +1,16 @@
-package com.tw.trip.pojo;
+package com.tw.itinerary.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serializable;
 
 @Entity
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class TourGroupDetail implements Serializable {
+
     public static final long serialVersionUID = 35L;
 
     @Id

@@ -1,6 +1,6 @@
 package com.tw.trip.dao;
 
-import com.tw.trip.pojo.TourGroupDetail;
+import com.tw.itinerary.model.TourGroupDetail;
 
 import java.util.List;
 

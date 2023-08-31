@@ -14,12 +14,10 @@ import com.tw.ticket.model.dao.TicketFavoriteRepository;
 import com.tw.ticket.model.dao.TicketImageRepository;
 import com.tw.ticket.model.dao.TicketRepository;
 import com.tw.ticket.service.ImageService;
-import com.tw.trip.pojo.Trip;
+import com.tw.itinerary.model.Trip;
 import com.tw.trip.pojo.TripFavorite;
-import com.tw.trip.pojo.TripFavorite.PrimaryKey2;
-import com.tw.trip.pojo.TripImage;
 import com.tw.trip.repository.TripFavoriteRepository;
-import com.tw.trip.repository.TripRepository;
+import com.tw.itinerary.model.repository.TripRepository;
 import com.tw.trip.service.TripImageService;
 import com.tw.trip.service.TripService;
 

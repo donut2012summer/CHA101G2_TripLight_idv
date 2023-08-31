@@ -1,16 +1,13 @@
-package com.tw.trip.service;
+package com.tw.itinerary.service;
 
-import com.tw.member.model.Member;
 import com.tw.trip.dao.TourGroupDao;
 import com.tw.trip.dao.TripCommentDao;
 import com.tw.trip.dao.TripDao;
-import com.tw.trip.pojo.TourGroup;
-import com.tw.trip.pojo.Trip;
-import com.tw.trip.pojo.TripComment;
-import com.tw.trip.pojo.TripImage;
+import com.tw.itinerary.model.TourGroup;
+import com.tw.itinerary.model.Trip;
+import com.tw.itinerary.model.TripComment;
 import jakarta.persistence.PersistenceContext;
 import org.hibernate.Session;
-import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +16,6 @@ import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Base64;
 import java.util.List;
 
 @Service
@@ -36,6 +32,7 @@ public class TripPageService {
 
     @Autowired
     TourGroupDao tourGroupDao;
+
 
 
     public List<TourGroup> getTourGroupWithDates(Integer tripId) {

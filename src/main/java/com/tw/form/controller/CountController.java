@@ -6,7 +6,7 @@ import com.tw.article.dao.ArticleRepository;
 import com.tw.form.dto.CountData;
 import com.tw.member.model.dao.MemberRepository;
 import com.tw.ticket.model.dao.TicketRepository;
-import com.tw.trip.repository.TripRepository;
+import com.tw.itinerary.model.repository.TripRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

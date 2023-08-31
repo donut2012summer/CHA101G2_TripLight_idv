@@ -1,20 +1,18 @@
 package com.tw.trip.service;
 
+import com.tw.itinerary.model.*;
 import com.tw.member.model.Member;
 import com.tw.trip.dao.TripCommentDao;
 import com.tw.trip.dao.TripDao;
-import com.tw.trip.pojo.*;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.Date;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.Queue;
 
 @Service
 @Transactional

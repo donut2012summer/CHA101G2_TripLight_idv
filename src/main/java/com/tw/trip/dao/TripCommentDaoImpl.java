@@ -1,16 +1,13 @@
 package com.tw.trip.dao;
 
 
-import com.tw.member.model.Member;
-import com.tw.trip.pojo.TripComment;
+import com.tw.itinerary.model.TripComment;
 import jakarta.persistence.PersistenceContext;
-import jakarta.persistence.Transient;
 import jakarta.transaction.Transactional;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Transactional

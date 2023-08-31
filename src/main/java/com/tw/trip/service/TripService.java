@@ -3,10 +3,8 @@ package com.tw.trip.service;
 
 import com.tw.ai.dto.TripDto;
 
-import com.tw.trip.pojo.Trip;
-import com.tw.trip.pojo.TripImage;
-import com.tw.trip.repository.TripRepository;
-import com.tw.trip.repository.TripImageRepository;
+import com.tw.itinerary.model.TripImage;
+import com.tw.itinerary.model.repository.TripImageRepository;
 import com.tw.vendor.dao.TripRepository2;
 import com.tw.vendor.model.Trip2;
 import org.springframework.beans.factory.annotation.Autowired;

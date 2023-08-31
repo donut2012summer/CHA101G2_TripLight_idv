@@ -1,22 +1,17 @@
-package com.tw.trip.pojo;
+package com.tw.itinerary.model;
 
 import com.tw.member.model.Member;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Base64;
 
 @Entity
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table (name = "trip_comment" ,catalog = "cha101_g2")
 public class TripComment implements Serializable {
 
     private static final long serialVersionUID = 2L;
@@ -27,7 +22,7 @@ public class TripComment implements Serializable {
 
     private Integer tripId;
 
-    @Column(name = "member_id")
+    @Transient
     private Integer memberId;
 
     private Integer rating;

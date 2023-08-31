@@ -3,6 +3,7 @@ package com.tw.trip.pojo;
 import java.io.Serializable;
 import java.sql.Timestamp;
 
+import com.tw.itinerary.model.Trip;
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
@@ -17,7 +18,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TripFavorite implements Serializable{
-
 
 	private static final long serialVersionUID = 1L;
 

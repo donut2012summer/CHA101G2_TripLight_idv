@@ -5,10 +5,11 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.tw.trip.repository.TripImageRepository;
+import com.tw.itinerary.model.repository.TripImageRepository;
 
 @Service
 public class TripImageService {
+
 	@Autowired
 	private TripImageRepository tripImageRepository;
 

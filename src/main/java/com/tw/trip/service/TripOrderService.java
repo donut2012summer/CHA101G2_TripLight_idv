@@ -4,18 +4,14 @@ import com.tw.member.model.Member;
 import com.tw.trip.dao.TourGroupDao;
 import com.tw.trip.dao.TourGroupDetailDao;
 import com.tw.trip.dao.TripOrderDao;
-import com.tw.trip.pojo.TourGroup;
-import com.tw.trip.pojo.TourGroupDetail;
-import com.tw.trip.pojo.TripComment;
-import com.tw.trip.pojo.TripOrder;
+import com.tw.itinerary.model.TourGroup;
+import com.tw.itinerary.model.TourGroupDetail;
+import com.tw.itinerary.model.TripOrder;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.sql.Timestamp;
-import java.util.Date;
 
 @Transactional
 @Service

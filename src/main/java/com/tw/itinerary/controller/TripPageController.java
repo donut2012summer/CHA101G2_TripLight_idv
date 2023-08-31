@@ -1,13 +1,12 @@
-package com.tw.trip.controller;
+package com.tw.itinerary.controller;
 
 import com.google.gson.Gson;
 import com.tw.trip.dao.TourGroupDao;
 import com.tw.trip.dao.TripDao;
-import com.tw.trip.pojo.TourGroup;
-import com.tw.trip.pojo.Trip;
-import com.tw.trip.pojo.TripComment;
-import com.tw.trip.pojo.TripImage;
-import com.tw.trip.service.TripPageService;
+import com.tw.itinerary.model.TourGroup;
+import com.tw.itinerary.model.Trip;
+import com.tw.itinerary.model.TripComment;
+import com.tw.itinerary.service.TripPageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,6 +25,8 @@ public class TripPageController {
     @Autowired
     TripDao tripDao;
 
+
+
     @GetMapping("/getTourGroup")
     public String getTourGroup(@RequestParam Integer tripId){
 
@@ -38,16 +39,8 @@ public class TripPageController {
 
     }
 
-    @GetMapping("/getTripComments")
-    public String getTripComments(@RequestParam Integer tripId){
 
-        List<TripComment> tripCommentList = tripPageService.getTripCommentsByTripId(tripId);
 
-        Gson gson = new Gson();
-        String json = gson.toJson(tripCommentList);
-
-        return json;
-    }
 
     @GetMapping ("/getTripPics")
     public String getTripPics(@RequestParam Integer tripId){
@@ -69,6 +62,23 @@ public class TripPageController {
 
         return json;
     }
+
+    @GetMapping("/getTripComments")
+    public String getTripComments(@RequestParam Integer tripId){
+
+        List<TripComment> tripCommentList = tripPageService.getTripCommentsByTripId(tripId);
+
+        Gson gson = new Gson();
+        String json = gson.toJson(tripCommentList);
+
+        return json;
+    }
+
+    /*
+    * 評論需要的資訊
+    *
+    *
+    * */
 
 
 

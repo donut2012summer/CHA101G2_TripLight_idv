@@ -2,7 +2,7 @@ package com.tw.trip.service;
 
 import com.tw.member.model.Member;
 import com.tw.trip.dao.TripCommentDao;
-import com.tw.trip.pojo.Trip;
+import com.tw.itinerary.model.Trip;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
 import org.hibernate.Session;

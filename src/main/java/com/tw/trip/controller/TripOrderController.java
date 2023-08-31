@@ -9,11 +9,10 @@ import com.tw.ticket.MyUtils;
 import com.tw.ticket.thirdparty.ecpay.payment.integration.AllInOne;
 import com.tw.ticket.thirdparty.ecpay.payment.integration.domain.AioCheckOutALL;
 import com.tw.trip.dao.TripOrderDao;
-import com.tw.trip.pojo.TourGroup;
-import com.tw.trip.pojo.TourGroupDetail;
+import com.tw.itinerary.model.TourGroup;
+import com.tw.itinerary.model.TourGroupDetail;
 import com.tw.trip.service.TripOrderService;
 import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpSession;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +21,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.net.http.HttpRequest;
 import java.util.Map;
 import java.util.UUID;
 

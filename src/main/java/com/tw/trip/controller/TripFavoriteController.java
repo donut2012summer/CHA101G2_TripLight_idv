@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tw.trip.pojo.Trip;
-import com.tw.trip.repository.TripRepository;
+import com.tw.itinerary.model.Trip;
+import com.tw.itinerary.model.repository.TripRepository;
 import com.tw.trip.service.TripFavoriteService;
 
 import lombok.Data;
