@@ -1,2 +1,5 @@
 # CHA101G2_TripLight
-這是專題的本體 使用Spring boot 3.1.0
+Here is the original project under Spring boot environment 
+
+this is under construction, I am now organize the codes from Hibernate to Spring Data JPA
+
